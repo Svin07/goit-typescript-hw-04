@@ -12,7 +12,7 @@
 import React, { useEffect, useRef } from "react";
 
 // Опишіть Props
-export function Observer({ children, onContentEndVisible }: Props) {
+export function Observer({ children, onContentEndVisible }) {
   // Вкажіть правильний тип для useRef зверніть увагу, в який DOM елемент ми його передаємо
   const endContentRef = useRef(null);
 
