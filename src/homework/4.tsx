@@ -3,7 +3,7 @@ import noop from "lodash/noop";
 
 type MenuIds = "first" | "second" | "last";
 type Menu = { id: MenuIds; title: string };
-type SelectedMenu = { id: MenuIds; title: string };
+type SelectedMenu = { id?: MenuIds };
 type MenuSelected = { selectedMenu: SelectedMenu };
 
 // Додати тип Menu Selected
@@ -54,7 +54,7 @@ function MenuProvider({ children }: PropsProvider) {
 }
 
 type PropsMenu = {
-  menus: Menu;
+  menus: Menu[];
 };
 
 function MenuComponent({ menus }: PropsMenu) {
